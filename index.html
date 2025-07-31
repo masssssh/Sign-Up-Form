@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Your Logo</div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <img src="../Sign-Up-Form/images/1801287.svg" alt="logo" class="logo" height="30">
     <div class="sign_up_block">
-        <p1>Sign up</p>
-        <p2>If you already have an account register</p2>
-        <p3>You can   Login here !</p3>
-        <form action="#" method="post">
-            <label for="Email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email address">
+        <p class="main-heading">Sign up</p>
+        <p class="sub-heading">If you already have an account register</p>
+        <p class="note">You can<a href="#" class="btn_register">Login here !</a></p>
+        <form action="#" method="post" class="forms">
+            <!--погуглить как связать label и input (атрибут)-->
+            <div class="form-group" style="position: relative; display: inline-block;">
+                <img src="../Sign-Up-Form/images/Group.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Enter your email address" style="padding-left: 27px;">
+            </div>
+
+            <div class="form-group" style="position: relative; display: inline-block;">
+                <img src="../Sign-Up-Form/images/user 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 16px; width: 17px;">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" placeholder="Enter your User name" style="padding-left: 27px;">
+            </div>
+
+            <div class="form-group" style="position: relative; display: inline-block;">
+                <img src="../Sign-Up-Form/images/padlock 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" placeholder="Enter your Password" style="padding-left: 27px;">
+            </div>
+
+            <div class="form-group" style="position: relative; display: inline-block;">
+                <img src="../Sign-Up-Form/images/padlock 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
+                <label for="Confirm Password">Confirm Password</label>
+                <input type="password" id="Confirm Password" placeholder="Confirm your Password" style="padding-left: 27px;">
+            </div>
+            <button type="submit" id="btn_register">Register</button>
         </form>
-        <form action="#" method="post">
-            <label for="Username">Username</label>
-            <input type="text" id="username" placeholder="Enter your User name">
-        </form>
-        <form action="#" method="post">
-            <label for="Password">Password</label>
-            <input type="password" id="password" placeholder="Enter your Password">
-        </form>
-        <form action="#" method="post">
-            <label for="Confirm Password">Confirm Password</label>
-            <input type="password" id="confirm" placeholder="Confirm your Password">
-        </form>
-        <button id="btn_register">Register</button>
+        
     </div>
     <div class="image_block">
-        <img src="../images/60bb16d27389b3f0c5a28dfe7f64728bdb8bfd4e.png">
-        <p1>Sign Up to name</p1>
-        <p2>Lorem Ipsum is simply</p2>
+        <img src="../Sign-Up-Form/images/Rectangle 12.svg" alt="Sally" style="height: 415px;">
+        <div class="image_block_heading">Sign Up to name</div>
+        <div class="image_block_note">Lorem Ipsum is simply</div>
     </div>
 </body>
 </html>
