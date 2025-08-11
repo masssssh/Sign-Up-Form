@@ -5,40 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
     <img src="../Sign-Up-Form/images/1801287.svg" alt="logo" class="logo" height="30">
     <div class="sign_up_block">
         <p class="main-heading">Sign up</p>
         <p class="sub-heading">If you already have an account register</p>
         <p class="note">You can<a href="#" class="btn_register">Login here !</a></p>
         <form action="#" method="post" class="forms">
-            <!--погуглить как связать label и input (атрибут)-->
-            <div class="form-group" style="position: relative; display: inline-block;">
-                <img src="../Sign-Up-Form/images/Group.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
-                <label for="Email">Email</label>
-                <input type="email" id="Email" placeholder="Enter your email address" style="padding-left: 27px;">
+            <div class="form-group">
+                <img src="../Sign-Up-Form/images/Group.svg" class="icon" alt="icon">
+                <label for="e-mail">Email</label>
+                <input type="email" id="e-mail" name="e-mail" required placeholder="Enter your email address">
             </div>
 
-            <div class="form-group" style="position: relative; display: inline-block;">
-                <img src="../Sign-Up-Form/images/user 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 16px; width: 17px;">
-                <label for="Username">Username</label>
-                <input type="text" id="Username" placeholder="Enter your User name" style="padding-left: 27px;">
+            <div class="form-group">
+                <img src="../Sign-Up-Form/images/user 1.svg" class="icon" alt="icon">
+                <label for="user-name">Username</label>
+                <input type="text" id="user-name" name="user-name" required minlength="3" placeholder="Enter your User name">
             </div>
 
-            <div class="form-group" style="position: relative; display: inline-block;">
-                <img src="../Sign-Up-Form/images/padlock 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
-                <label for="Password">Password</label>
-                <input type="password" id="Password" placeholder="Enter your Password" style="padding-left: 27px;">
+            <div class="form-group">
+                <img src="../Sign-Up-Form/images/padlock 1.svg" class="icon" alt="icon">
+                <label for="pass-word">Password</label>
+                <input type="password" id="pass-word" name="pass-word" required minlength="6" placeholder="Enter your Password">
             </div>
 
-            <div class="form-group" style="position: relative; display: inline-block;">
-                <img src="../Sign-Up-Form/images/padlock 1.svg" alt="icon" style="position: absolute; left: 0px; top: 65%; height: 17px; width: 17px;">
-                <label for="Confirm Password">Confirm Password</label>
-                <input type="password" id="Confirm Password" placeholder="Confirm your Password" style="padding-left: 27px;">
+            <div class="form-group">
+                <img src="../Sign-Up-Form/images/padlock 1.svg" class="icon" alt="icon">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Confirm your Password">
             </div>
             <button type="submit" id="btn_register">Register</button>
         </form>
